@@ -59,7 +59,8 @@ describe('NgModule', () => {
           expect(bindings).toBeDefined();
           expect(bindings).toEqual({
             testInput: '<',
-            testOutput: '&'
+            testOutput: '&',
+            testBind: '=',
           });
         });
       });
@@ -126,6 +127,7 @@ describe('NgModule', () => {
             bindToController: {
               testInput: '<',
               testOutput: '&',
+              testBind: '=',
             },
             restrict: 'A',
             scope: true,
